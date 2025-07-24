@@ -1,12 +1,15 @@
-apply plugin: 'java'
-apply plugin: 'idea'
-apply plugin: 'maven'
+plugins {
+    id 'java-library'
+    id 'idea'
+    id 'maven-publish'
+}
 
-group 'com.bedatadriven'
+group = 'com.dateofrock'
+version = '3.0.0'
 
-buildscript {
-    repositories {
-        mavenCentral()
+java {
+    toolchain {
+        languageVersion = JavaLanguageVersion.of(17)
     }
 }
 
@@ -14,17 +17,20 @@ repositories {
     mavenCentral()
 }
 
-sourceCompatibility = 1.6
-targetCompatibility = 1.6
+dependencies {
+    //  [oai_citation:0‡Maven Repository](https://mvnrepository.com/artifact/com.fasterxml.jackson.core/jackson-databind/2.19.2?utm_source=chatgpt.com)
+    implementation 'com.fasterxml.jackson.core:jackson-databind:2.19.2'
+    //  [oai_citation:1‡Maven Central](https://central.sonatype.com/artifact/org.locationtech.jts/jts-core?utm_source=chatgpt.com)
+    implementation 'org.locationtech.jts:jts-core:1.20.0'
 
-task wrapper(type: Wrapper) {
-    gradleVersion = '2.7'
+    //  [oai_citation:2‡Maven Repository](https://mvnrepository.com/artifact/junit/junit/4.13.2?utm_source=chatgpt.com)
+    testImplementation 'junit:junit:4.13.2'
+    //  [oai_citation:3‡Maven Repository](https://mvnrepository.com/artifact/org.easymock/easymock?utm_source=chatgpt.com)
+    testImplementation 'org.easymock:easymock:5.6.0'
 }
 
-dependencies {
-    compile group: 'com.fasterxml.jackson.core', name: 'jackson-databind', version: '2.4.2'
-    compile("com.vividsolutions:jts:1.8")
-    testCompile 'junit:junit:4.11'
-    testCompile('org.easymock:easymock:3.2')
-
+tasks.wrapper {
+    gradleVersion = '8.14.3'
+    //  [oai_citation:4‡Gradle](https://gradle.org/install/?utm_source=chatgpt.com)
+    distributionType = Wrapper.DistributionType.ALL
 }

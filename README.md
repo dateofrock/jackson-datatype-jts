@@ -1,14 +1,10 @@
-
 # Jackson-datatype-jts
 
-[![Build Status](https://jenkins.bedatadriven.com/job/jackson-datatype-jts/badge/icon)](https://jenkins.bedatadriven.com/job/jackson-datatype-jts/)
-[![Maven Release](https://img.shields.io/maven-central/v/com.bedatadriven/jackson-datatype-jts.svg)](http://search.maven.org/#search%7Cgav%7C1%7Cg%3A%22com.bedatadriven%22%20AND%20a%3A%22jackson-datatype-jts%22)
-
 Jackson Module which provides custom serializers and deserializers for
-[JTS Geometry](http://www.vividsolutions.com/jts/javadoc/com/vividsolutions/jts/geom/Geometry.html) objects
+[JTS Geometry](https://github.com/locationtech/jts/blob/master/modules/core/src/main/java/org/locationtech/jts/geom/Geometry.java) objects
 using the [GeoJSON format](http://www.geojson.org/geojson-spec.html)
 
-## Installation 
+## Installation
 
 Releases of jackson-datatype-jts are available on Maven Central.
 
@@ -17,19 +13,19 @@ Releases of jackson-datatype-jts are available on Maven Central.
 To use the module in Maven-based projects, use following dependency:
 
 ```xml
+
 <dependency>
-  <groupId>com.bedatadriven</groupId>
-  <artifactId>jackson-datatype-jts</artifactId>
-  <version>2.2</version>
+    <groupId>com.dateofrock</groupId>
+    <artifactId>jackson-datatype-jts</artifactId>
+    <version>3.0.0</version>
 </dependency>    
 ```
 
 ### Gradle
 
-
 ```gradle
 dependencies {
-    compile 'com.bedatadriven:jackson-datatype-jts:2.2'
+    compile 'com.dateofrock:jackson-datatype-jts:3.0.0'
 }
 ```
 
