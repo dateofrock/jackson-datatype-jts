@@ -18,14 +18,14 @@ repositories {
 }
 
 dependencies {
-    //  [oai_citation:0‡Maven Repository](https://mvnrepository.com/artifact/com.fasterxml.jackson.core/jackson-databind/2.19.2?utm_source=chatgpt.com)
+    //  [oai_citation:0‡Maven Repository](https://mvnrepository.com/artifact/com.fasterxml.jackson.core/jackson-databind)
     implementation 'com.fasterxml.jackson.core:jackson-databind:2.19.2'
-    //  [oai_citation:1‡Maven Central](https://central.sonatype.com/artifact/org.locationtech.jts/jts-core?utm_source=chatgpt.com)
+    //  [oai_citation:1‡Maven Central](https://central.sonatype.com/artifact/org.locationtech.jts/jts-core)
     implementation 'org.locationtech.jts:jts-core:1.20.0'
 
-    //  [oai_citation:2‡Maven Repository](https://mvnrepository.com/artifact/junit/junit/4.13.2?utm_source=chatgpt.com)
+    //  [oai_citation:2‡Maven Repository](https://mvnrepository.com/artifact/junit/junit)
     testImplementation 'junit:junit:4.13.2'
-    //  [oai_citation:3‡Maven Repository](https://mvnrepository.com/artifact/org.easymock/easymock?utm_source=chatgpt.com)
+    //  [oai_citation:3‡Maven Repository](https://mvnrepository.com/artifact/org.easymock/easymock)
     testImplementation 'org.easymock:easymock:5.6.0'
 }
 
