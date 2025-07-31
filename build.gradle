@@ -5,7 +5,7 @@ plugins {
 }
 
 group = 'com.dateofrock'
-version = '3.0.0'
+version = '3.0.1'
 
 java {
     toolchain {
@@ -31,7 +31,6 @@ dependencies {
 
 tasks.wrapper {
     gradleVersion = '8.14.3'
-    //  [oai_citation:4‡Gradle](https://gradle.org/install/?utm_source=chatgpt.com)
     distributionType = Wrapper.DistributionType.ALL
 }
 
