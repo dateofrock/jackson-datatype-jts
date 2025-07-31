@@ -17,7 +17,7 @@ To use the module in Maven-based projects, use following dependency:
 <dependency>
     <groupId>com.dateofrock</groupId>
     <artifactId>jackson-datatype-jts</artifactId>
-    <version>3.0.0</version>
+    <version>3.0.1</version>
 </dependency>    
 ```
 
@@ -25,7 +25,7 @@ To use the module in Maven-based projects, use following dependency:
 
 ```gradle
 dependencies {
-    compile 'com.dateofrock:jackson-datatype-jts:3.0.0'
+    compile 'com.dateofrock:jackson-datatype-jts:3.0.1'
 }
 ```
 
