@@ -25,7 +25,7 @@ To use the module in Maven-based projects, use following dependency:
 
 ```gradle
 dependencies {
-    compile 'com.dateofrock:jackson-datatype-jts:3.0.1'
+    implementation 'com.dateofrock:jackson-datatype-jts:3.0.1'
 }
 ```
 
